@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUPB ONE — Rides</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="1692703f4ea956e7===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#00B14F',
+        'on-primary': '#00210B',
+        'primary-deep': '#007A33',
+        'primary-container': '#C8F7DC',
+        'on-primary-container': '#002910',
+        'primary-tint': '#ECFDF3',
+        'secondary': '#111827',
+        'on-secondary': '#FFFFFF',
+        'secondary-container': '#F0F2F5',
+        'on-secondary-container': '#111827',
+        'accent': '#FFB020',
+        'on-accent': '#2A1800',
+        'accent-container': '#FFF5DB',
+        'on-accent-container': '#4A2C00',
+        'background': '#F5F7F8',
+        'on-background': '#111827',
+        'surface': '#FFFFFF',
+        'on-surface': '#111827',
+        'surface-subtle': '#F0F2F5',
+        'on-surface-subtle': '#374151',
+        'text-secondary': '#4B5563',
+        'muted-grey': '#6B7280',
+        'outline': '#E5E7EB',
+        'outline-subtle': '#F0F2F5',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+        'error-container': '#FFEDEA',
+        'on-error-container': '#410002',
+      },
+      borderRadius: {
+        'sm': '8px',
+        'DEFAULT': '12px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'xs': '4px',
+        'sm': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+      },
+      fontFamily: {
+        'display': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'headline': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'title': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+        'mono': ['"Red Hat Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['36px', { lineHeight: '42px', letterSpacing: '-0.75px', fontWeight: '800' }],
+        'display-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.5px', fontWeight: '800' }],
+        'headline-lg': ['24px', { lineHeight: '30px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-md': ['20px', { lineHeight: '26px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '-0.15px', fontWeight: '700' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'tap-feedback': '120ms',
+        'sheet-enter': '240ms',
+        'sheet-exit': '160ms',
+      },
+      transitionDelay: {
+        'tap-feedback': '0ms',
+        'sheet-enter': '0ms',
+        'sheet-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'tap-feedback': 'ease-out',
+        'sheet-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'sheet-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Red+Hat+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-background text-on-background font-body antialiased">
+  <div class="w-full max-w-[390px] mx-auto min-h-screen flex flex-col bg-background">
+
+    <!-- Contextual Header -->
+    <header class="sticky top-0 z-30 bg-background px-lg pt-lg pb-md flex items-center justify-between gap-md">
+      <div class="flex items-center gap-md">
+        <a href="../home-dashboard/HomeDashboard.html" aria-label="Back to Home" class="inline-flex items-center justify-center w-10 h-10 bg-surface border border-outline-subtle text-secondary rounded-full">
+          <span class="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_back</span>
+        </a>
+        <div class="flex items-center gap-sm">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrB_1tl5DLKOQ2qZ4LJPX0kD7L4rN1L-SgEPCmNGDt_mEazZcBALwX1uGLnKUIHiblirue3TfIDMKkERPQySALEvTPEGsSi4-5Vt2M_SxpnDcm4zbHNNOA6iaHRv8iGZBMTvmfsGtyKt_ljkfJBh2ndk3cZzvN7CuF99LtYrlrkv2qHjUwfXOSRSx8D6e8LwE9EdnLwM3T9qcwKM20ZxQk00-oNoMVcQNuPmTzGw4WQTbdQyJQ1oPQ" alt="3D Cab Icon" class="w-8 h-8 rounded-lg object-contain bg-surface border border-outline-subtle" data-stitch-original-src="5b7ab00753999747===../../images/icon_3d_zeride.jpg">
+          <h1 class="font-headline text-headline-md text-secondary" data-design-text-token="headline-md">Need a ride? 🚕</h1>
+        </div>
+      </div>
+
+      <button type="button" class="inline-flex items-center gap-xs bg-secondary text-on-secondary px-md py-sm rounded-full font-label text-label-md shrink-0">
+        <span class="material-symbols-outlined text-[16px]" aria-hidden="true">add</span>
+        <span data-design-text-token="label-md">List Cab</span>
+      </button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 pb-2xl flex flex-col gap-lg">
+
+      <!-- Homescreen-style Cab Hero Banner + Overlapping Pill Search -->
+      <section class="flex flex-col">
+        <div class="relative w-full h-36 overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrC8LtHWKuTV5iOXNEflPawx0Gwn-8SnxzCEqXamnULUdlbz4fxF663qNEccRprtTqyBS41hC79tyOHH3Sril6JY6RTAry9yitc6HP2Wt3GAJa_TbTPd4W9F78rG3HGDiJi1m16pWP8WeKc_VI082e17iLgSTyhuhbzdCmrdz1eY55jB-EATqnI3HoBe7jgQxRyp6hK2iHybIIPSbGd9EhQq2cHbFvHY1tKrYXXdGTFEJu9-7Pk1SxPp" alt="CUPB ONE Rides Banner" class="w-full h-full object-cover" data-stitch-original-src="c6ac55d6d1a49337===../../images/banner_cab_hero.jpg">
+          <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+        </div>
+
+        <div class="px-lg -mt-6 relative z-10">
+          <form data-component-id="searchbar-standard" data-component-type="searchbar" data-component-variant="standard" role="search" class="w-full flex items-center gap-sm bg-surface border border-outline-subtle rounded-full px-lg py-md shadow-md focus-within:border-primary">
+            <span class="material-symbols-outlined text-[20px] text-muted-grey shrink-0" aria-hidden="true">search</span>
+            <input id="cab-search" type="search" aria-label="Search Bathinda, Chandigarh, or driver" placeholder="CUPB Campus → Bathinda Station..." class="w-full bg-transparent border-0 p-0 font-body text-body-md text-on-surface placeholder:text-muted-grey focus:ring-0">
+          </form>
+        </div>
+      </section>
+
+      <!-- Running Promotional Banner Carousel -->
+      <section aria-label="Cab promotions" class="flex items-stretch gap-md overflow-x-auto snap-x snap-mandatory px-lg pb-xs">
+        <div class="snap-start shrink-0 w-80 bg-gradient-to-r from-primary-tint via-surface to-surface border border-primary/20 rounded-xl p-lg flex items-center justify-between gap-md shadow-sm">
+          <div class="flex flex-col gap-xs">
+            <span class="font-label text-label-md text-primary-deep" data-design-text-token="label-md">CUPB ONE RIDES</span>
+            <p class="font-title text-title-md text-secondary text-balance" data-design-text-token="title-md">Bathinda drops from ₹300.</p>
+          </div>
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrB_1tl5DLKOQ2qZ4LJPX0kD7L4rN1L-SgEPCmNGDt_mEazZcBALwX1uGLnKUIHiblirue3TfIDMKkERPQySALEvTPEGsSi4-5Vt2M_SxpnDcm4zbHNNOA6iaHRv8iGZBMTvmfsGtyKt_ljkfJBh2ndk3cZzvN7CuF99LtYrlrkv2qHjUwfXOSRSx8D6e8LwE9EdnLwM3T9qcwKM20ZxQk00-oNoMVcQNuPmTzGw4WQTbdQyJQ1oPQ" alt="3D Car" class="w-12 h-12 rounded-lg object-contain bg-surface border border-outline-subtle p-xs shrink-0" data-stitch-original-src="5b7ab00753999747===../../images/icon_3d_zeride.jpg">
+        </div>
+
+        <div class="snap-start shrink-0 w-80 bg-gradient-to-r from-accent-container via-surface to-surface border border-accent/30 rounded-xl p-lg flex items-center justify-between gap-md shadow-sm">
+          <div class="flex flex-col gap-xs">
+            <span class="font-label text-label-md text-on-accent-container" data-design-text-token="label-md">GROUP TRIPS</span>
+            <p class="font-title text-title-md text-secondary text-balance" data-design-text-token="title-md">6-Seater Ertiga for ₹450</p>
+          </div>
+          <span class="px-md py-xs rounded-full bg-accent text-on-accent font-label text-label-md shrink-0" data-design-text-token="label-md">Call Direct</span>
+        </div>
+      </section>
+
+      <!-- Available Drivers List -->
+      <section class="px-lg flex flex-col gap-md">
+        <div class="flex items-center justify-between">
+          <h2 class="font-headline text-title-lg text-secondary" data-design-text-token="title-lg">Nearby Drivers</h2>
+          <span class="font-label text-label-md text-primary-deep tabular-nums" data-design-text-token="label-md">2 available</span>
+        </div>
+
+        <!-- Driver Card 1: Sedan Dzire -->
+        <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="bg-surface rounded-xl border border-outline-subtle shadow-sm p-lg flex flex-col gap-md">
+          <header class="flex items-start justify-between gap-md">
+            <div class="flex items-center gap-md">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrB_1tl5DLKOQ2qZ4LJPX0kD7L4rN1L-SgEPCmNGDt_mEazZcBALwX1uGLnKUIHiblirue3TfIDMKkERPQySALEvTPEGsSi4-5Vt2M_SxpnDcm4zbHNNOA6iaHRv8iGZBMTvmfsGtyKt_ljkfJBh2ndk3cZzvN7CuF99LtYrlrkv2qHjUwfXOSRSx8D6e8LwE9EdnLwM3T9qcwKM20ZxQk00-oNoMVcQNuPmTzGw4WQTbdQyJQ1oPQ" alt="Sedan Dzire 3D icon" class="w-12 h-12 rounded-lg object-contain bg-background border border-outline-subtle p-xs shrink-0" data-stitch-original-src="5b7ab00753999747===../../images/icon_3d_zeride.jpg">
+              <div>
+                <div class="flex items-center gap-xs">
+                  <h3 class="font-title text-title-md text-on-surface" data-design-text-token="title-md">Sedan Dzire</h3>
+                  <span class="inline-flex items-center px-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label text-label-md tabular-nums shrink-0" data-design-text-token="label-md">4.8 ★</span>
+                </div>
+                <p class="font-body text-body-sm text-text-secondary" data-design-text-token="body-sm">Rahul Kumar</p>
+                <span class="font-mono text-mono-sm text-text-secondary tabular-nums" data-design-text-token="mono-sm">PB-03-AB-1234</span>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="block font-headline text-headline-md text-secondary tabular-nums" data-design-text-token="headline-md">₹350</span>
+              <span class="inline-flex items-center px-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label text-label-md" data-design-text-token="label-md">Available</span>
+            </div>
+          </header>
+
+          <div class="bg-background rounded-md px-md py-sm flex items-center justify-between gap-sm">
+            <span class="font-body text-body-sm text-on-surface" data-design-text-token="body-sm">CUPB → Bathinda</span>
+            <span class="font-label text-label-md text-text-secondary tabular-nums shrink-0" data-design-text-token="label-md">0.4 km</span>
+          </div>
+
+          <footer class="grid grid-cols-2 gap-sm">
+            <a href="../driver-details/DriverDetails.html" data-component-id="button-secondary" data-component-type="button" data-component-variant="secondary" class="inline-flex items-center justify-center gap-xs bg-surface border border-outline text-secondary px-md py-md rounded-md font-label text-label-lg">
+              <span data-design-text-token="label-lg">View Details</span>
+            </a>
+            <a href="tel:+919876543210" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" class="inline-flex items-center justify-center gap-xs bg-primary text-on-primary px-md py-md rounded-md font-label text-label-lg">
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">call</span>
+              <span data-design-text-token="label-lg">Call Driver</span>
+            </a>
+          </footer>
+        </article>
+
+        <!-- Driver Card 2: SUV Ertiga -->
+        <article class="bg-surface rounded-xl border border-outline-subtle shadow-sm p-lg flex flex-col gap-md">
+          <header class="flex items-start justify-between gap-md">
+            <div class="flex items-center gap-md">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrB_1tl5DLKOQ2qZ4LJPX0kD7L4rN1L-SgEPCmNGDt_mEazZcBALwX1uGLnKUIHiblirue3TfIDMKkERPQySALEvTPEGsSi4-5Vt2M_SxpnDcm4zbHNNOA6iaHRv8iGZBMTvmfsGtyKt_ljkfJBh2ndk3cZzvN7CuF99LtYrlrkv2qHjUwfXOSRSx8D6e8LwE9EdnLwM3T9qcwKM20ZxQk00-oNoMVcQNuPmTzGw4WQTbdQyJQ1oPQ" alt="SUV Ertiga 3D icon" class="w-12 h-12 rounded-lg object-contain bg-background border border-outline-subtle p-xs shrink-0" data-stitch-original-src="5b7ab00753999747===../../images/icon_3d_zeride.jpg">
+              <div>
+                <div class="flex items-center gap-xs">
+                  <h3 class="font-title text-title-md text-on-surface" data-design-text-token="title-md">SUV Ertiga</h3>
+                  <span class="inline-flex items-center px-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label text-label-md tabular-nums shrink-0" data-design-text-token="label-md">4.9 ★</span>
+                </div>
+                <p class="font-body text-body-sm text-text-secondary" data-design-text-token="body-sm">Harpreet Singh</p>
+                <span class="font-mono text-mono-sm text-text-secondary tabular-nums" data-design-text-token="mono-sm">PB-03-CD-5678</span>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="block font-headline text-headline-md text-secondary tabular-nums" data-design-text-token="headline-md">₹450</span>
+              <span class="inline-flex items-center px-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label text-label-md" data-design-text-token="label-md">Available</span>
+            </div>
+          </header>
+
+          <div class="bg-background rounded-md px-md py-sm flex items-center justify-between gap-sm">
+            <span class="font-body text-body-sm text-on-surface" data-design-text-token="body-sm">CUPB → Bathinda</span>
+            <span class="font-label text-label-md text-text-secondary tabular-nums shrink-0" data-design-text-token="label-md">0.8 km</span>
+          </div>
+
+          <footer class="grid grid-cols-2 gap-sm">
+            <a href="../driver-details/DriverDetails.html" class="inline-flex items-center justify-center gap-xs bg-surface border border-outline text-secondary px-md py-md rounded-md font-label text-label-lg">
+              <span data-design-text-token="label-lg">View Details</span>
+            </a>
+            <a href="tel:+919815012345" class="inline-flex items-center justify-center gap-xs bg-primary text-on-primary px-md py-md rounded-md font-label text-label-lg">
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">call</span>
+              <span data-design-text-token="label-lg">Call Driver</span>
+            </a>
+          </footer>
+        </article>
+      </section>
+
+    </main>
+
+    <!-- Fixed 5-Tab Bottom Navigation -->
+    <nav aria-label="Primary navigation" class="sticky bottom-0 z-30 bg-surface border-t border-outline-subtle px-sm py-sm">
+      <div class="grid grid-cols-5 items-center">
+        <a href="../home-dashboard/HomeDashboard.html" class="flex flex-col items-center gap-xs py-xs text-text-secondary hover:text-secondary">
+          <span class="material-symbols-outlined text-[22px]" aria-hidden="true">home</span>
+          <span class="font-label text-label-md" data-design-text-token="label-md">Home</span>
+        </a>
+        <a href="../food-discovery/FoodDiscovery.html" aria-current="page" class="flex flex-col items-center gap-xs py-xs text-primary-deep">
+          <span class="material-symbols-outlined text-[22px]" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">explore</span>
+          <span class="font-label text-label-md" data-design-text-token="label-md">Explore</span>
+        </a>
+        <a href="../student-marketplace/StudentMarketplace.html" class="flex flex-col items-center gap-xs py-xs text-text-secondary hover:text-secondary">
+          <span class="material-symbols-outlined text-[22px]" aria-hidden="true">storefront</span>
+          <span class="font-label text-label-md" data-design-text-token="label-md">Market</span>
+        </a>
+        <a href="#activity" class="flex flex-col items-center gap-xs py-xs text-text-secondary hover:text-secondary">
+          <span class="material-symbols-outlined text-[22px]" aria-hidden="true">receipt_long</span>
+          <span class="font-label text-label-md" data-design-text-token="label-md">Activity</span>
+        </a>
+        <a href="#profile" class="flex flex-col items-center gap-xs py-xs text-text-secondary hover:text-secondary">
+          <span class="material-symbols-outlined text-[22px]" aria-hidden="true">person</span>
+          <span class="font-label text-label-md" data-design-text-token="label-md">Profile</span>
+        </a>
+      </div>
+    </nav>
+
+  </div>
+
+
+</body></html>

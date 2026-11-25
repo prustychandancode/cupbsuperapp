@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUPB ONE — Verify ID</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="1692703f4ea956e7===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#00B14F',
+        'on-primary': '#00210B',
+        'primary-deep': '#007A33',
+        'primary-container': '#C8F7DC',
+        'on-primary-container': '#002910',
+        'primary-tint': '#ECFDF3',
+        'secondary': '#111827',
+        'on-secondary': '#FFFFFF',
+        'secondary-container': '#F0F2F5',
+        'on-secondary-container': '#111827',
+        'accent': '#FFB020',
+        'on-accent': '#2A1800',
+        'accent-container': '#FFF5DB',
+        'on-accent-container': '#4A2C00',
+        'background': '#F5F7F8',
+        'on-background': '#111827',
+        'surface': '#FFFFFF',
+        'on-surface': '#111827',
+        'surface-subtle': '#F0F2F5',
+        'on-surface-subtle': '#374151',
+        'text-secondary': '#4B5563',
+        'muted-grey': '#6B7280',
+        'outline': '#E5E7EB',
+        'outline-subtle': '#F0F2F5',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+        'error-container': '#FFEDEA',
+        'on-error-container': '#410002',
+      },
+      borderRadius: {
+        'sm': '8px',
+        'DEFAULT': '12px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'xs': '4px',
+        'sm': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+      },
+      fontFamily: {
+        'display': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'headline': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'title': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+        'mono': ['"Red Hat Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['36px', { lineHeight: '42px', letterSpacing: '-0.75px', fontWeight: '800' }],
+        'display-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.5px', fontWeight: '800' }],
+        'headline-lg': ['24px', { lineHeight: '30px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-md': ['20px', { lineHeight: '26px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '-0.15px', fontWeight: '700' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'tap-feedback': '120ms',
+        'sheet-enter': '240ms',
+        'sheet-exit': '160ms',
+      },
+      transitionDelay: {
+        'tap-feedback': '0ms',
+        'sheet-enter': '0ms',
+        'sheet-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'tap-feedback': 'ease-out',
+        'sheet-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'sheet-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Red+Hat+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-background text-on-background font-body antialiased">
+  <div class="w-full max-w-[390px] mx-auto min-h-screen flex flex-col bg-background">
+
+    <!-- Contextual Header -->
+    <header class="sticky top-0 z-30 bg-background px-lg pt-lg pb-md flex items-center justify-between gap-md">
+      <div class="flex items-center gap-md">
+        <a href="../student-profile/StudentProfile.html" aria-label="Back to Profile" class="inline-flex items-center justify-center w-10 h-10 bg-surface border border-outline-subtle text-secondary rounded-full">
+          <span class="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_back</span>
+        </a>
+        <h1 class="font-headline text-headline-md text-secondary" data-design-text-token="headline-md">Verify Student ID</h1>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 px-lg pb-24 flex flex-col gap-lg">
+
+      <!-- Promotional Banner Card -->
+      <section class="bg-gradient-to-r from-primary-tint via-surface to-surface border border-primary/20 rounded-xl p-lg flex items-center justify-between gap-md shadow-sm">
+        <div class="flex flex-col gap-xs">
+          <span class="font-label text-label-md text-primary-deep" data-design-text-token="label-md">CUPB ONE PASS</span>
+          <p class="font-title text-title-md text-secondary" data-design-text-token="title-md">Unlock 40% off &amp; campus trust.</p>
+        </div>
+        <span class="material-symbols-outlined text-[24px] text-primary-deep" aria-hidden="true">verified_user</span>
+      </section>
+
+      <!-- Verification Form -->
+      <form class="bg-surface rounded-xl border border-outline-subtle shadow-sm p-lg flex flex-col gap-md">
+        <div class="flex flex-col gap-xs">
+          <label for="univ-email" class="font-label text-label-md text-secondary" data-design-text-token="label-md">CUPB Email</label>
+          <input id="univ-email" type="email" value="aarav.24@cup.edu.in" placeholder="name@cup.edu.in" class="w-full bg-background border border-outline-subtle rounded-md px-md py-sm font-body text-body-md text-on-surface focus:border-primary focus:ring-0">
+        </div>
+
+        <div class="flex flex-col gap-xs">
+          <label for="roll-no" class="font-label text-label-md text-secondary" data-design-text-token="label-md">Roll Number</label>
+          <input id="roll-no" type="text" value="24CUPB1042" placeholder="e.g. 24CUPB1042" class="w-full bg-background border border-outline-subtle rounded-md px-md py-sm font-mono text-mono-sm text-on-surface focus:border-primary focus:ring-0">
+        </div>
+
+        <div class="flex flex-col gap-xs">
+          <label for="hostel-select" class="font-label text-label-md text-secondary" data-design-text-token="label-md">Hostel / Residence</label>
+          <select id="hostel-select" class="w-full bg-background border border-outline-subtle rounded-md px-md py-sm font-body text-body-md text-on-surface focus:border-primary focus:ring-0">
+            <option>Hostel 4 (Boys)</option>
+            <option>Hostel 2 (Girls)</option>
+            <option>Day Scholar</option>
+          </select>
+        </div>
+
+        <div class="flex flex-col gap-xs pt-xs">
+          <span class="font-label text-label-md text-secondary" data-design-text-token="label-md">Student ID Card</span>
+          <button type="button" class="w-full border border-dashed border-primary bg-primary-tint rounded-lg p-lg flex flex-col items-center gap-xs text-primary-deep">
+            <span class="material-symbols-outlined text-[24px]" aria-hidden="true">upload_file</span>
+            <span class="font-label text-label-md" data-design-text-token="label-md">Upload ID Photo</span>
+          </button>
+        </div>
+      </form>
+
+    </main>
+
+    <!-- Sticky Submit Bar -->
+    <div class="sticky bottom-0 z-30 bg-surface border-t border-outline-subtle px-lg py-md">
+      <button type="button" class="w-full inline-flex items-center justify-center gap-sm bg-primary text-on-primary px-xl py-md rounded-xl font-label text-label-lg shadow-sm">
+        <span data-design-text-token="label-lg">Verify CUPB ID</span>
+      </button>
+    </div>
+
+  </div>
+
+
+</body></html>

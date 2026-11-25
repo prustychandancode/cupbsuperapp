@@ -1,0 +1,353 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUPB ONE — Home</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="1692703f4ea956e7===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#00B14F',
+        'on-primary': '#00210B',
+        'primary-deep': '#007A33',
+        'primary-container': '#C8F7DC',
+        'on-primary-container': '#002910',
+        'primary-tint': '#ECFDF3',
+        'secondary': '#111827',
+        'on-secondary': '#FFFFFF',
+        'secondary-container': '#F0F2F5',
+        'on-secondary-container': '#111827',
+        'accent': '#FFB020',
+        'on-accent': '#2A1800',
+        'accent-container': '#FFF5DB',
+        'on-accent-container': '#4A2C00',
+        'background': '#F5F7F8',
+        'on-background': '#111827',
+        'surface': '#FFFFFF',
+        'on-surface': '#111827',
+        'surface-subtle': '#F0F2F5',
+        'on-surface-subtle': '#374151',
+        'text-secondary': '#4B5563',
+        'muted-grey': '#6B7280',
+        'outline': '#E5E7EB',
+        'outline-subtle': '#F0F2F5',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+        'error-container': '#FFEDEA',
+        'on-error-container': '#410002',
+      },
+      borderRadius: {
+        'sm': '8px',
+        'DEFAULT': '12px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'xs': '4px',
+        'sm': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+      },
+      fontFamily: {
+        'display': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'headline': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'title': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+        'mono': ['"Red Hat Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['36px', { lineHeight: '42px', letterSpacing: '-0.75px', fontWeight: '800' }],
+        'display-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.5px', fontWeight: '800' }],
+        'headline-lg': ['24px', { lineHeight: '30px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'headline-md': ['20px', { lineHeight: '26px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '-0.15px', fontWeight: '700' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'tap-feedback': '120ms',
+        'sheet-enter': '240ms',
+        'sheet-exit': '160ms',
+      },
+      transitionDelay: {
+        'tap-feedback': '0ms',
+        'sheet-enter': '0ms',
+        'sheet-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'tap-feedback': 'ease-out',
+        'sheet-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'sheet-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Red+Hat+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-background text-on-background font-body antialiased">
+  <div class="w-full max-w-[390px] mx-auto min-h-screen flex flex-col bg-background">
+
+    <!-- Top App Header -->
+    <header class="sticky top-0 z-30 bg-background px-lg pt-lg pb-md flex items-center justify-between gap-md">
+      <div class="flex items-center gap-sm min-w-0">
+        <div class="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center shrink-0 shadow-sm">
+          <span class="font-display text-title-md text-primary" data-design-text-token="title-md">C</span>
+        </div>
+        <div class="min-w-0">
+          <span class="block font-headline text-title-md text-secondary leading-tight" data-design-text-token="title-md">CUPB ONE</span>
+          <div class="flex items-center gap-xs text-text-secondary">
+            <span class="material-symbols-outlined text-[14px] text-primary-deep shrink-0" aria-hidden="true">location_on</span>
+            <span class="font-body text-body-sm truncate" data-design-text-token="body-sm">CUPB Campus</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-sm shrink-0">
+        <a href="../notifications/Notifications.html" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" aria-label="Notifications" class="relative inline-flex items-center justify-center w-10 h-10 bg-surface border border-outline-subtle text-secondary rounded-full">
+          <span class="material-symbols-outlined text-[20px]" aria-hidden="true">notifications</span>
+          <span data-component-id="badge-dot" data-component-type="badge" data-component-variant="dot" role="status" aria-label="Unread notifications" class="absolute top-2 right-2.5 w-2 h-2 rounded-full bg-accent"></span>
+        </a>
+        <a href="../student-profile/StudentProfile.html" aria-label="Student Profile">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrB_ASVhFYjtoeMaXsDxG3ahlhleTSyZsl4lTNWSKKBemjSQpvQfIyZiuJs-5728RJURWiGnJ1TeBCs-NYm1ZKxGIWdySy85xVKmTpa-GfXp2uxMVQhH4FVZTRsDEiVTRWcKLTh_fhkZ4xFTvQncAF8Y01DDbTQ3yR9ES2bblyvZHbH1BA3n1TxnbIaRvEfZbx0jDPXWbG7NStdarPven7tB8xlRTjLA_O_3V381lxUKcmB3q9-5XA" alt="Aarav Sharma" class="w-10 h-10 rounded-full object-cover border-2 border-primary" data-stitch-original-src="970cd8eb3af030d7===../../images/avatar_student.jpg">
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 pb-2xl flex flex-col gap-lg">
+
+      <!-- Illustrated Campus Banner + Pill Search -->
+      <section class="flex flex-col">
+        <div class="relative w-full h-36 overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrA_28IXScr5aWqPVJWppe-G4fdLgg5dfw6w0I7MBYAsEgaQw5UMzKZzixYxzXlO_BNrjZbuuG4VX98ntpDeHiv941N_cHhr9rKdRVLax9vVMG5xLa3MyJdIQhWKarh6WqNaTcFmcpgLpylW6YZ4fc-5lfqwbQ7tVGvet-y9mptslczufo48bqyPIb114oArm6V3IVQHeGsYpgQoIN6w2704KCaTQUSai6-BE6s8HIpkeXeqP3ZfNKgi1IY" alt="CUPB Campus Plaza" class="w-full h-full object-cover" data-stitch-original-src="ca1c4c7702a0640e===../../images/banner_campus_hero.jpg">
+          <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+        </div>
+
+        <div class="px-lg -mt-6 relative z-10 flex flex-col gap-md">
+          <form data-component-id="searchbar-standard" data-component-type="searchbar" data-component-variant="standard" role="search" class="w-full flex items-center gap-sm bg-surface border border-outline-subtle rounded-full px-lg py-md shadow-md focus-within:border-primary">
+            <span class="material-symbols-outlined text-[20px] text-muted-grey shrink-0" aria-hidden="true">search</span>
+            <input id="home-search" type="search" aria-label="Search food, rides, market" placeholder="Search food, rides, market..." class="w-full bg-transparent border-0 p-0 font-body text-body-md text-on-surface placeholder:text-muted-grey focus:ring-0">
+          </form>
+
+          <h1 class="font-display text-headline-lg text-secondary" data-design-text-token="headline-lg">Hey, What&#39;s up? 👋</h1>
+        </div>
+      </section>
+
+      <!-- 2-Row 3D Icon Services Grid -->
+      <section class="px-lg">
+        <div class="grid grid-cols-4 gap-sm items-stretch">
+          <a href="../food-discovery/FoodDiscovery.html" class="bg-surface rounded-xl border border-outline-subtle p-sm flex flex-col items-center text-center gap-xs shadow-sm transition-transform duration-tap-feedback ease-tap-feedback active:scale-[0.97]">
+            <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrCBT8M4UCyxzkl_kEmZapfx_zlRyr67Pg7B63wbGDhsrVycAuGUU0sF-tX9qWdpuwZbF8p2xvTzZhcwJr6lKvgHPpDmAnVaPAztRgIVSRRDmX4hEgy0mGfSxdY5W8EiThLNMrWl8OuO4-Dn3NSr3sSF2_NGyC5J_1coKIl--eLanu1LatFufZLxg3vAUW7J1vX8hQIBbZtOwhbUDwIxNMt7pScoebUkV-0or3kpOyNINKllper0AQ" alt="Food" class="w-11 h-11 object-contain" data-stitch-original-src="87d913ca76e71f66===../../images/icon_3d_zefood.jpg">
+            </div>
+            <span class="font-label text-label-md text-on-surface" data-design-text-token="label-md">Food</span>
+          </a>
+
+          <a href="../cab-discovery/CabDiscovery.html" class="bg-surface rounded-xl border border-outline-subtle p-sm flex flex-col items-center text-center gap-xs shadow-sm transition-transform duration-tap-feedback ease-tap-feedback active:scale-[0.97]">
+            <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrB_1tl5DLKOQ2qZ4LJPX0kD7L4rN1L-SgEPCmNGDt_mEazZcBALwX1uGLnKUIHiblirue3TfIDMKkERPQySALEvTPEGsSi4-5Vt2M_SxpnDcm4zbHNNOA6iaHRv8iGZBMTvmfsGtyKt_ljkfJBh2ndk3cZzvN7CuF99LtYrlrkv2qHjUwfXOSRSx8D6e8LwE9EdnLwM3T9qcwKM20ZxQk00-oNoMVcQNuPmTzGw4WQTbdQyJQ1oPQ" alt="Rides" class="w-11 h-11 object-contain" data-stitch-original-src="5b7ab00753999747===../../images/icon_3d_zeride.jpg">
+            </div>
+            <span class="font-label text-label-md text-on-surface" data-design-text-token="label-md">Rides</span>
+          </a>
+
+          <a href="../mart-discovery/MartDiscovery.html" class="bg-surface rounded-xl border border-outline-subtle p-sm flex flex-col items-center text-center gap-xs shadow-sm transition-transform duration-tap-feedback ease-tap-feedback active:scale-[0.97]">
+            <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrD6k8S3ZHkTwCydVAEx8bvx3FagYhPzSKHKl5iszK24ZIBYb2F54hUYD7LZe79dQ4CyTGXw4kKlLDlm-ns9o3su2YmiHIdbbmyrKQs88leki-aPiWoFxKpsBqmSpKYp5GcEgvVbWvIUgyeqm5go6Fej3WnVndb0-yS4nBtjTBytG8-u8aY4FRYtTcO_T775Vh_9hVB-0Z6ug0dwXJvGhsmqOLWkaRhp8PUukDQgQNbC5VMvsmfn9A" alt="Mart" class="w-11 h-11 object-contain" data-stitch-original-src="d4a4e962786cee2b===../../images/icon_3d_zemart.jpg">
+            </div>
+            <span class="font-label text-label-md text-on-surface" data-design-text-token="label-md">Mart</span>
+          </a>
+
+          <a href="../meds-discovery/MedsDiscovery.html" class="bg-surface rounded-xl border border-outline-subtle p-sm flex flex-col items-center text-center gap-xs shadow-sm transition-transform duration-tap-feedback ease-tap-feedback active:scale-[0.97]">
+            <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrD3Bb8FNTRdLq4WZrtgo551R-ZfPXgH8DECRfIN9gOq8XgbpWPhPkqFz1aVEzcNtvvxf5ceKd8UBX23Sl-2cBuiPXQm8f_QFKu8orUSkRgsHelhlBLqHDhtjCgazX0bM7ClTMGKK2lGbFjT7LV9Mtui5skYLckDUQyDfoi3n1aJrn5DIIzEz2wqHSOPA4a-1Jd3ny0__sg99tF2pxTWL1gL2VsfUvaYPhz_20nBpVhqItOtG3RONg" alt="Meds" class="w-11 h-11 object-contain" data-stitch-original-src="ba8112f0531fb642===../../images/icon_3d_zemeds.jpg">
+            </div>
+            <span class="font-label text-label-md text-on-surface" data-design-text-token="label-md">Meds</span>
+          </a>
+
+          <a href="../chicken-discovery/ChickenDiscovery.html" class="bg-surface rounded-xl border border-outline-subtle py-sm px-xs flex flex-col items-center text-center gap-xs shadow-sm transition-transform duration-tap-feedback ease-tap-feedback active:scale-[0.97]">
+            <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAzmjcIJhCTWU0Jd_do-1JIake4hr9rI0YGKdWg1uVndMUH-NV26ND_oiGCkX42k3-nqO9SWH02Zbto2T8YhBFZF0TnHgZAlgwHh9kULPz_FJ_kfrFMZTzcwdr9rPTwKxPTiHnPNev6Mj8-fXhORYrmUWGMLDuqCPwHkZCmBZnrHdvp452Ml6kdQsR8M38JBEYPI04qWmoggkIktv3gRcXNO9nO-wJuqw6L6mN3DvSDX7iSrbgVd0b5bt0" alt="Chicken" class="w-11 h-11 object-contain" data-stitch-original-src="b71d01dba5839cb8===../../images/icon_3d_zechicken.jpg">
+            </div>
+            <span class="font-label text-label-md text-on-surface" data-design-text-token="label-md">Chicken</span>
+          </a>
+
+          <a href="../bike-rental/BikeRental.html" class="bg-surface rounded-xl border border-outline-subtle p-sm flex flex-col items-center text-center gap-xs shadow-sm transition-transform duration-tap-feedback ease-tap-feedback active:scale-[0.97]">
+            <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDZEVOXPUf5TTsGdd0-dNOElJwp18FQM8C4d8rNEltHEtPv6sb9VUiGlxVETk-qMOVHhgXGvB-dH43KXIyj3Ngzm5DXVo-ukuWbZerhadeZ1annjrxmhcYs9MnC9AG5eXdBqjuFDdWJ-PeulNIEdtsP2yeXa2m_27UW47eDefrtS1zhgUifTrWEcqz3pIm7Jsouqv_r5lxuJtGJFeLDciD8pBv1OiCmIej2p_TGHrlZiGbH9O8CTQ" alt="Rentals" class="w-11 h-11 object-contain" data-stitch-original-src="d8509c7095e8f8fa===../../images/icon_3d_zerent.jpg">
+            </div>
+            <span class="font-label text-label-md text-on-surface" data-design-text-token="label-md">Rentals</span>
+          </a>
+
+          <a href="../student-marketplace/StudentMarketplace.html" class="bg-surface rounded-xl border border-outline-subtle p-sm flex flex-col items-center text-center gap-xs shadow-sm transition-transform duration-tap-feedback ease-tap-feedback active:scale-[0.97]">
+            <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDQ6zR_YUWKa0LeX1HJH5V0T-9FluT8iO0spqT4HB_V11SOLYg3Mj5cAPM5y8y76ZMGBlYxi5nfL782PH3ZaGU3fMyvXBf06PXvPOk-r36-RCHGUrLckoLnDx2GINA36NQdNEhRcslAt2y1ZQu7EJhRHWo5ZaSh5rR6W-gRLB5gv3kASSDaK0WTdx-gEAMiNoKVQqHPwLoX5NfhK7I4t7l5UiOwNSprIoHS_NmLbWBRU8Ey6v-a7g" alt="Market" class="w-11 h-11 object-contain" data-stitch-original-src="73aaba09d533b30c===../../images/icon_3d_market.jpg">
+            </div>
+            <span class="font-label text-label-md text-on-surface" data-design-text-token="label-md">Market</span>
+          </a>
+
+          <a href="#more" class="bg-surface rounded-xl border border-outline-subtle p-sm flex flex-col items-center text-center gap-xs shadow-sm transition-transform duration-tap-feedback ease-tap-feedback active:scale-[0.97]">
+            <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrBXGJKfsseSGqOZ95pktvJSxKfUFafTA50ImKDmPoaUYBIKA8qi7GKdeYSlCof0NEcxOaxBj2q20Fb1ujUzArWbTOlcar5QL1k13QZBkQLd1BWh08eJylrpgJretAPi0AukOt5kPnQtcke5cG-6C96xEbHMYpCiLc_ApOpeLktIe1Yxo4RE2EuGtiMlopkW5BWHniyiObBN8ZjzflwHn8vmkVJ97iGpoPbSlmgCf5EkOxOp" alt="More" class="w-11 h-11 object-contain" data-stitch-original-src="9d138ce4f7dfb552===../../images/icon_3d_more.jpg">
+            </div>
+            <span class="font-label text-label-md text-on-surface" data-design-text-token="label-md">More</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Trending Around Campus -->
+      <section class="px-lg flex flex-col gap-md">
+        <div class="flex items-center justify-between">
+          <h2 class="font-headline text-title-lg text-secondary" data-design-text-token="title-lg">Trending 🔥</h2>
+          <a href="../food-discovery/FoodDiscovery.html" class="font-label text-label-md text-primary-deep" data-design-text-token="label-md">See all</a>
+        </div>
+
+        <div class="grid grid-cols-2 gap-md items-stretch">
+          <article class="bg-surface rounded-xl border border-outline-subtle shadow-sm overflow-hidden flex flex-col h-full">
+            <div class="relative h-24 w-full">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAwoa44Hd1BHWG_W2hW44Og4wK-nB2TYyrgSuoYOTGnieUw6ZfBVkfsIs_E9RT6nvJwB95TnWjYp8zV-2sJ9MiYuo6Lam-lTUMFIuvfb4GCIvF0TkgRQkRfHXYN3cUKFhej-cmU2BsYNDeHdWaMSU4I8t5hAJfzq3pBOYVZfp963bAxfAC6ksoVNnoLF0mEP5b2s4GRjNlXbYsUXn9LSTIYw4DbNKPZcXCbMWuEiINJFB_TYQg" alt="Punjabi Zaika" class="w-full h-full object-cover" data-stitch-original-src="880c7f14f6cb220b===../../images/food_biryani.jpg">
+              <span class="absolute top-2 left-2 px-sm py-0.5 rounded-full bg-surface text-secondary font-label text-label-md shadow-sm tabular-nums" data-design-text-token="label-md">4.7 ★</span>
+            </div>
+            <div class="p-md flex flex-col gap-xs flex-1 justify-between">
+              <h3 class="font-title text-title-md text-on-surface" data-design-text-token="title-md">Punjabi Zaika</h3>
+              <p class="font-body text-body-sm text-text-secondary tabular-nums" data-design-text-token="body-sm">20m • ₹149</p>
+            </div>
+          </article>
+
+          <article class="bg-surface rounded-xl border border-outline-subtle shadow-sm overflow-hidden flex flex-col h-full">
+            <div class="relative h-24 w-full">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrB5hBj2MdXktrwLxWiCAsB2HsKWrY7rl972dSyC6iM43O7xf00vtWHodQRlaGAsfqEu0W6IkIOauRKFXZXlRBBkEMVemfPNG0Ip-cFKcBIC5DZKijLedS0Zuc4Ie6gecwaQdaIwv1RhMJFOosUPiNYf6C79h3t3-f9fWdMZuKWobtuU8OPHQ23S7hgHOSqFq_Hp7zLIGvp646NBiR1UZiWY2iaOZlba1poSQdn0sVEc9ET6__8" alt="Sprint Cycle" class="w-full h-full object-cover" data-stitch-original-src="89df5c4cb35ea211===../../images/market_cycle.jpg">
+              <span class="absolute top-2 left-2 px-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label text-label-md" data-design-text-token="label-md">Like New</span>
+            </div>
+            <div class="p-md flex flex-col gap-xs flex-1 justify-between">
+              <h3 class="font-title text-title-md text-on-surface" data-design-text-token="title-md">Sprint Cycle</h3>
+              <p class="font-body text-body-sm text-text-secondary tabular-nums" data-design-text-token="body-sm">₹3,200 • Hostel 4</p>
+            </div>
+          </article>
+
+          <article class="bg-surface rounded-xl border border-outline-subtle shadow-sm p-md flex flex-col justify-between gap-sm h-full">
+            <div class="flex items-center justify-between">
+              <div class="w-9 h-9 rounded-md bg-primary-tint flex items-center justify-center text-primary-deep">
+                <span class="material-symbols-outlined text-[20px]" aria-hidden="true">local_mall</span>
+              </div>
+              <span class="px-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label text-label-md" data-design-text-token="label-md">24x7</span>
+            </div>
+            <div>
+              <h3 class="font-title text-title-md text-on-surface" data-design-text-token="title-md">Hostel Mart</h3>
+              <p class="font-body text-body-sm text-text-secondary" data-design-text-token="body-sm">Maggi &amp; Snacks</p>
+            </div>
+          </article>
+
+          <article class="bg-surface rounded-xl border border-outline-subtle shadow-sm p-md flex flex-col justify-between gap-sm h-full">
+            <div class="flex items-center justify-between">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrBMW-NFmv7IowSmTVzuKANQ6cHM0uH6KKVVlyy8dVOipw7NwRC2zTBSuWjYjhooAhR94GNyVaDGpDVpzKGRGAC88QcEvOD06GpDKoqfTLJUwlnPFjtLZkANSqeM8YBUPNCcMUl1QLaP81P1uRCmXr_SRTWDCakriN2Vipneapn9PHjvdJSX13xJ47cbbgZT-zyhkCZkhCFpa-GT00c3uo4mS91dXGCVVQzJV_CUw9vsvgUvVcg" alt="Rahul Kumar" class="w-9 h-9 rounded-full object-cover" data-stitch-original-src="ecc13b9e8b45b8a8===../../images/driver_rahul.jpg">
+              <span class="px-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label text-label-md" data-design-text-token="label-md">Available</span>
+            </div>
+            <div>
+              <h3 class="font-title text-title-md text-on-surface" data-design-text-token="title-md">Rahul Kumar</h3>
+              <p class="font-body text-body-sm text-text-secondary tabular-nums" data-design-text-token="body-sm">Bathinda • ₹350</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Running Promotional Banner Carousel (After Trending) -->
+      <section aria-label="Promotional banners" class="flex flex-col gap-sm">
+        <div class="px-lg flex items-center justify-between">
+          <h2 class="font-headline text-title-lg text-secondary" data-design-text-token="title-lg">Campus Promos</h2>
+        </div>
+
+        <div class="flex items-stretch gap-md overflow-x-auto snap-x snap-mandatory px-lg pb-xs">
+          <!-- Promo 1 -->
+          <div class="snap-start shrink-0 w-80 bg-gradient-to-r from-primary-tint via-surface to-surface border border-primary/20 rounded-xl p-lg flex items-center justify-between gap-md shadow-sm">
+            <div class="flex flex-col gap-xs">
+              <span class="font-label text-label-md text-primary-deep" data-design-text-token="label-md">CUPB ONE</span>
+              <h3 class="font-title text-title-md text-secondary" data-design-text-token="title-md">Campus life, sorted. 💚</h3>
+            </div>
+            <div class="w-12 h-12 rounded-xl bg-surface border border-outline-subtle p-xs flex items-center justify-center shrink-0">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrBfXFQh6cRsCnWjUADWPzj0_2g33_WVCRf4lBNIOTCMm0WMYZx7k4SzrI-YEHeIa_CKModw9N4t5SL-KoHR-4y5w7d2gfpDu3RTBDTBa4f6jMiRj8Ap7th0w84JZhUhAjedVxgqvEADTxpRp-HXHJ2PCHIKLaQTo1Nll-QrqTHIZyKHhi0pK4rH8Fw00NkakLvFtJR4tgPbOsDEDBR7gJIbw59IiPw1iHJLo0oBXDoYop4iHa0" alt="Deals" class="w-full h-full object-contain rounded-lg" data-stitch-original-src="b7589ffc41f8b072===../../images/icon_3d_deals.jpg">
+            </div>
+          </div>
+
+          <!-- Promo 2 -->
+          <div class="snap-start shrink-0 w-80 bg-gradient-to-r from-accent-container via-surface to-surface border border-accent/30 rounded-xl p-lg flex items-center justify-between gap-md shadow-sm">
+            <div class="flex flex-col gap-xs">
+              <span class="font-label text-label-md text-on-accent-container" data-design-text-token="label-md">LATE NIGHT</span>
+              <h3 class="font-title text-title-md text-on-accent-container" data-design-text-token="title-md">Hungry? Order now. 💀</h3>
+            </div>
+            <a href="../food-discovery/FoodDiscovery.html" class="shrink-0 bg-accent text-on-accent px-md py-sm rounded-md font-label text-label-lg" data-design-text-token="label-lg">
+              Order
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Student Deals -->
+      <section class="px-lg flex flex-col gap-md">
+        <h2 class="font-headline text-title-lg text-secondary" data-design-text-token="title-lg">Student Deals</h2>
+
+        <div class="flex flex-col gap-sm">
+          <div class="bg-surface rounded-xl border border-outline-subtle p-md flex items-center justify-between gap-md shadow-sm">
+            <div class="flex items-center gap-md">
+              <div class="w-11 h-11 rounded-lg bg-accent-container flex items-center justify-center text-accent shrink-0">
+                <span class="material-symbols-outlined text-[22px]" aria-hidden="true">local_pizza</span>
+              </div>
+              <div>
+                <h3 class="font-title text-title-md text-on-surface" data-design-text-token="title-md">30% Off Campus Crust</h3>
+                <p class="font-body text-body-sm text-text-secondary tabular-nums" data-design-text-token="body-sm">Code: CUPB30</p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-muted-grey" aria-hidden="true">chevron_right</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Fixed 5-Tab Bottom Navigation -->
+    <nav aria-label="Primary navigation" class="sticky bottom-0 z-30 bg-surface border-t border-outline-subtle px-sm py-sm">
+      <div class="grid grid-cols-5 items-center">
+        <a href="../home-dashboard/HomeDashboard.html" aria-current="page" class="flex flex-col items-center gap-xs py-xs text-primary-deep">
+          <span class="material-symbols-outlined text-[22px]" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">home</span>
+          <span class="font-label text-label-md" data-design-text-token="label-md">Home</span>
+        </a>
+        <a href="../food-discovery/FoodDiscovery.html" class="flex flex-col items-center gap-xs py-xs text-text-secondary hover:text-secondary">
+          <span class="material-symbols-outlined text-[22px]" aria-hidden="true">explore</span>
+          <span class="font-label text-label-md" data-design-text-token="label-md">Explore</span>
+        </a>
+        <a href="../student-marketplace/StudentMarketplace.html" class="flex flex-col items-center gap-xs py-xs text-text-secondary hover:text-secondary">
+          <span class="material-symbols-outlined text-[22px]" aria-hidden="true">storefront</span>
+          <span class="font-label text-label-md" data-design-text-token="label-md">Market</span>
+        </a>
+        <a href="../notifications/Notifications.html" class="flex flex-col items-center gap-xs py-xs text-text-secondary hover:text-secondary">
+          <span class="material-symbols-outlined text-[22px]" aria-hidden="true">receipt_long</span>
+          <span class="font-label text-label-md" data-design-text-token="label-md">Activity</span>
+        </a>
+        <a href="../student-profile/StudentProfile.html" class="flex flex-col items-center gap-xs py-xs text-text-secondary hover:text-secondary">
+          <span class="material-symbols-outlined text-[22px]" aria-hidden="true">person</span>
+          <span class="font-label text-label-md" data-design-text-token="label-md">Profile</span>
+        </a>
+      </div>
+    </nav>
+
+  </div>
+
+
+</body></html>

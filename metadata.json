@@ -1,0 +1,6 @@
+{
+  "name": "CUPB ONE",
+  "description": "Central University of Punjab campus superapp for food, rides, mart, meds, rentals, and student marketplace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
